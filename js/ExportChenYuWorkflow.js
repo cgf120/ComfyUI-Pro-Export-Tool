@@ -77,7 +77,7 @@ const ext = {
 
             const outputs = [];
             for (const n of nodes) {
-              if (n.type === "SaveImage" || n.type === "SaveAudio" || n.type === "SaveImageJPGNoMeta") {
+              if (n.type === "SaveImage" || n.type === "SaveAudio" || n.type === "SaveImageJPGNoMeta" || n.type === "SaveVideo" || n.type === "VHS_VideoCombine") {
                 outputs.push({ id: n.id, type: n.type});
               }
             }
