@@ -72,6 +72,11 @@ const ext = {
                     if (input.widget !== "combo") throw input;
                     input.widget = "audio";
                   }
+                  if (a.find((n) => n.type === "LoadVideo")) {
+                    if (input.widget !== "combo") throw input;
+                    input.widget = "video";
+                  }
+                  
                   return input;
                 });
 
